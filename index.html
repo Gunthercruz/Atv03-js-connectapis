@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <section id="consulta1">
+        <hgroup>
+            <h3>Dados de Feriados Nacionais</h3>
+            <p>Esta consulta acessa a API de Feriados Nacionais no Brasil e mostra os feriados do ano atual.</p>
+        </hgroup>
+        <button onclick="fetchFeriados()">Buscar</button>
+        <pre id="result1"></pre>
+    </section>
+
+    <section id="consulta2">
+        <hgroup>
+            <h3>Taxas de Câmbio</h3>
+            <p>Esta consulta acessa a API de taxas de câmbio e exibe as cotações de algumas moedas.</p>
+        </hgroup>
+        <button onclick="fetchTaxasCambio()">Buscar</button>
+        <pre id="result2"></pre>
+    </section>
+
+
+    <section>
+        <h2>Buscar informações do DDD</h2>
+        <input type="text" id="dddInput" placeholder="Digite o DDD">
+        <button onclick="buscarDDD()">Buscar</button>
+        <pre id="resultado"></pre>
+    </section>
+
+    <section>
+        <h1>Buscar informações do tipo de automovel</h1>
+        <input type="text" id="cepInput" placeholder="Digite o cep">
+        <button onclick="buscarTipo()">Buscar</button>
+        <pre id="resultadoCep"></pre>
+    </section>
+
+
+    <section>
+        <h2>Promise.race</h2>
+        <button onclick="fetchRace()">Executar Promise.race</button>
+        <pre id="raceResult"></pre>
+    </section>
+
+    <section>
+        <h2>Promise.all</h2>
+        <button onclick="fetchAll()">Executar Promise.all</button>
+        <pre id="allResult"></pre>
+    </section>
+</body>
+
+</html>
